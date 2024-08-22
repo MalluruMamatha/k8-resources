@@ -12,6 +12,10 @@ env:
     configMapKeyRef:
       name: configmap-demo
       key: cloud
+- name: frontend
+  valueFrom:
+    configMapKeyRef:
+      name: configmap-demo
       key: course
 
 
