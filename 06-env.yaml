@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: env-pod
+  labels:
+    cloud: AWS
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    env:
+    - name: GREETINGS
+      value: " i am mamatha,working as devops engineer"
+
