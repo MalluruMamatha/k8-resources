@@ -3,8 +3,8 @@ kind: Pod
 metadata:
   name: labels
   labels:
-    cloud: devops
-    trainer: mamatha
+    cloud: AWS
+    course: DevOps
 spec:
   containers:
   - name: nginx
