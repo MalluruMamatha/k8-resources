@@ -2,17 +2,13 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: pod-config
-spec:
-  containers:
-  - name: nginx
-    image: nginx
-  env:
-  - name: frontend
-    valuefrom:
-      configMapKeyRef:
-        name: configmap-demo
-        key: cloud
-        key: course
+env:
+- name: frontend
+  valuefrom:
+    configMapKeyRef:
+      name: configmap-demo
+      key: cloud
+      key: course
 
 
         
