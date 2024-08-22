@@ -7,6 +7,6 @@ spec:
   - name: nginx
     image: nginx
 data:
-  cloud: AWS
-  course: kuberneties
+  cloud: "AWS"
+  course: "kuberneties"
   github: "https://github.com/MalluruMamatha/k8-resources"
