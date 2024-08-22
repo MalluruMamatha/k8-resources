@@ -6,17 +6,22 @@ spec:
   containers:
   - name: nginx
     image: nginx
-    env:
-    - name: cloud
-      valueFrom:
-        configMapKeyRef:
-          name: configmap-demo
-          key: cloud
-    - name: course
-      valueFrom:
-        configMapKeyRef:
-          name: configmap-demo
-          key: course
+  ### refering each evn variable here from the configmap file
+    # env:
+    # - name: cloud
+    #   valueFrom:
+    #     configMapKeyRef:
+    #       name: configmap-demo
+    #       key: cloud
+    # - name: course
+    #   valueFrom:
+    #     configMapKeyRef:
+    #       name: configmap-demo
+    #       key: course
+  #### if you want to refer the entire configmap file
+    envFrom:
+    - configMapRef:
+        name: configmap-demo
           
 
 
