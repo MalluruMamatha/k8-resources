@@ -8,5 +8,5 @@ spec:
   containers:
   - name: nginx
     image: nginx
-  - name: almalinux
-    image: almaLinux:9
+  - name: alma
+    image: almalinux:9
