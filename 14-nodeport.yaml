@@ -3,10 +3,12 @@ kind: Service
 metadata:
   name: service-alma
 spec:
+  type: NodePort
   selector:   # Select Pods with the following labels
     project: expense
     environment: dev
   ports:
   - protocol: TCP
     port: 80       # Port on the Service
-    targetPort: 80 # Port on the container
+    targetPort: 80
+    nodePort: 32760
