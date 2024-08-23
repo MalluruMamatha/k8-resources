@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: service-alma
+  name: service-nginx
 spec:
   selector:   # Select Pods with the following labels
     project: expense
