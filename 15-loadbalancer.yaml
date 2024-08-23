@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: service-lb
 spec:
-  type: LoadBalencer
+  type: LoadBalancer
   selector:   # Select Pods with the following labels
     project: expense
     environment: dev
